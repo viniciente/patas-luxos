@@ -19,6 +19,10 @@ namespace PatasLuxos.Models
             [Display(Name = "Cpf")]
             public string Cpf { get; set; } = string.Empty;
 
+            [Column("CEP")]
+            [Display(Name = "CEP")]
+            public bool CEP { get; set; }
+
             [Column("DataNascimento")]
             [Display(Name = "Data de Nascimento")]
             public string DataNascimento { get; set; } = string.Empty;
@@ -31,8 +35,8 @@ namespace PatasLuxos.Models
             [Display(Name = "Numero de Contato")]
             public string NumeroContato { get; set; } = string.Empty;
 
-            [Column("Tipo dE Usuario")]
-            [Display(Name = "Tipo e Usuario")]
+            [Column("Tipo de Usuario")]
+            [Display(Name = "Tipo de Usuario")]
             public bool TipoUsuario { get; set; }
 
             [Column("Senha")]
